@@ -1,6 +1,6 @@
 package Testcases;
 
-import org.apache.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,6 +22,8 @@ public class TC001_LoginTest extends BaseClass
 		logger.info("Password entered");
 		lp.clicksubmit();
 		logger.info("Submit button is clicked");
+		Alert alert=driver.switchTo().alert();
+		alert.accept();
 		
 		if(driver.getTitle().equals("Guru99 Bank Manager HomePage"))
 		{

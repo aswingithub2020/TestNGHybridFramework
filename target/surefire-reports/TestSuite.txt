@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.324 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.323 s <<< FAILURE! - in TestSuite
+Testcases.TC001_LoginTest.LoginTest  Time elapsed: 1.45 s  <<< FAILURE!
+java.lang.AssertionError: Login Failed expected [false] but found [true]
+	at Testcases.TC001_LoginTest.LoginTest(TC001_LoginTest.java:35)
+

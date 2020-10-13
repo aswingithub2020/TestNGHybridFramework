@@ -5,16 +5,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+import Testcases.BaseClass;
+import Utilities.ReadConfiguration;
+
+public class LoginPage extends BaseClass{
 
 	WebDriver ldriver;
+	
 
 	public LoginPage(WebDriver rdriver) {
 		ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);
 	}
 
-	@FindBy(name = "uid")
+	@FindBy(name = "uid" )
 	WebElement txtusername;
 
 	@FindBy(name = "password")

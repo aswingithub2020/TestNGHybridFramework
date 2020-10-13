@@ -4,14 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="Testcases.TC002_AddCustomerTest">
+      <class name="Testcases.TC001_LoginTest">
         <methods>
-          <include name="getdata" invocation-numbers="1"/>
           <include name="teardown"/>
           <include name="aftermethod"/>
+          <include name="LoginTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Testcases.TC002_AddCustomerTest -->
+      </class> <!-- Testcases.TC001_LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

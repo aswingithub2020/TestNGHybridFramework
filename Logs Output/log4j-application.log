@@ -1,0 +1,19 @@
+2020-10-11 07:15:50,048  INFO [main] Login test:59 - --------------->Execution Started<----------------
+ 2020-10-11 07:15:59,495  INFO [main] Login test:73 - ---------------->Application Opened<---------------
+ 2020-10-11 07:15:59,888  INFO [main] Login test:20 - Username entered
+ 2020-10-11 07:15:59,964  INFO [main] Login test:22 - Password entered
+ 2020-10-11 07:16:00,382  INFO [main] Login test:24 - Submit button is clicked
+ 2020-10-11 07:16:01,748  INFO [main] Login test:80 - Execution Completed<----------> Browser is closed
+ 2020-10-11 07:18:36,733  INFO [main] Login test:59 - --------------->Execution Started<----------------
+ 2020-10-11 07:18:45,213  INFO [main] Login test:73 - ---------------->Application Opened<---------------
+ 2020-10-11 07:18:45,396  INFO [main] Login test:20 - Username entered
+ 2020-10-11 07:18:45,461  INFO [main] Login test:22 - Password entered
+ 2020-10-11 07:18:46,104  INFO [main] Login test:24 - Submit button is clicked
+ 2020-10-11 07:18:47,887  INFO [main] Login test:80 - Execution Completed<----------> Browser is closed
+ 2020-10-11 07:35:37,503  INFO [main] Login test:59 - --------------->Execution Started<----------------
+ 2020-10-11 07:35:46,252  INFO [main] Login test:73 - ---------------->Application Opened<---------------
+ 2020-10-11 07:35:46,448  INFO [main] Login test:20 - Username entered
+ 2020-10-11 07:35:46,522  INFO [main] Login test:22 - Password entered
+ 2020-10-11 07:35:47,242  INFO [main] Login test:24 - Submit button is clicked
+ 2020-10-11 07:35:49,053  INFO [main] Login test:80 - Execution Completed<----------> Browser is closed
+ 

@@ -5,11 +5,10 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -20,7 +19,6 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import PageObjects.AddNewCustomerPage;
 import PageObjects.LoginPage;
 import Utilities.ReadConfiguration;
 import Utilities.XLUtility;
@@ -42,7 +40,7 @@ public class BaseClass
 	
 
 	
-	@BeforeClass
+	@BeforeTest
 	@Parameters("browser")
 	public void setup(String br)
 	{
@@ -63,6 +61,7 @@ public class BaseClass
 		{
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
 			driver=new ChromeDriver();
+			
 		}
 		else if(br.equals("FireFox"))
 		{
@@ -75,7 +74,7 @@ public class BaseClass
 			logger.info("---------------->Application Opened<---------------");		
 	}
 
-	@AfterClass
+	@AfterTest
 	public void teardown() {
 		extent.flush();
 		driver.quit();
@@ -94,6 +93,10 @@ public class BaseClass
 		{
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + "oho is PASSED", ExtentColor.GREEN));
 						
+		}
+		else if(result.getStatus()==ITestResult.SKIP)
+		{
+			test.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + "yaaa is Skipped", ExtentColor.YELLOW));
 		}
 	}
 
